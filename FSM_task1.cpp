@@ -62,12 +62,11 @@ pair<bool, int> maxString(FSM fsm, string str, int k = 0) {
 }
 
 void output(pair<bool, int> result) {
-    cout << "Есть подстрока: " << (result.first ? "true" : "false") << ", " << "максимальная длина: " << result.second << endl;
+    cout << "Has substring: " << (result.first ? "true" : "false") << ", " << "maxlength: " << result.second << endl;
 }
 
 int main()
 {
-    setlocale(LC_ALL, "Russian");
     FSM fsm(0);
     output(maxString(fsm, "aaacab"));
     output(maxString(fsm, "aca"));
